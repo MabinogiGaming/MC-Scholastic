@@ -1,5 +1,7 @@
 package com.mabinogi.scholastic.plugins.factory;
 
+import static com.mabinogi.scholastic.Scholastic.LOG;
+
 import com.mabinogi.lib.plugin.IPlugin;
 import com.mabinogi.scholastic.plugins.ScholasticPlugins;
 
@@ -22,39 +24,27 @@ public class PluginFactory implements IPlugin {
 	}
 
 	@Override
-	public int getPriority() 
-	{
-		return 0;
-	}
-
-	@Override
-	public void start()
-	{
-		
-	}
-
-	@Override
 	public void pre(FMLPreInitializationEvent event) 
 	{
-		
+		LOG.info("Factory plugin pre");
 	}
 
 	@Override
 	public void init(FMLInitializationEvent event) 
 	{
-		
+		LOG.info("Factory plugin init");
 	}
 
 	@Override
 	public void post(FMLPostInitializationEvent event) 
 	{
-		
+		LOG.info("Factory plugin post");
 	}
 
 	@Override
 	public void complete(FMLLoadCompleteEvent event) 
 	{
-		
+		LOG.info("Factory plugin complete");
 	}
 
 }

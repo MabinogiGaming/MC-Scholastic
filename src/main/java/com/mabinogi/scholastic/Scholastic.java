@@ -1,7 +1,6 @@
 package com.mabinogi.scholastic;
 
-import org.apache.logging.log4j.Logger;
-
+import com.mabinogi.lib.logging.LogHandler;
 import com.mabinogi.scholastic.plugins.ScholasticPlugins;
 import com.mabinogi.scholastic.plugins.factory.PluginFactory;
 
@@ -17,9 +16,9 @@ public class Scholastic
 {
     public static final String MODID = "scholastic";
     public static final String NAME = "Scholastic";
-    public static final String VERSION = "0.0.1";
+    public static final String VERSION = "0.0.2";
 
-    public static Logger LOG;
+    public static LogHandler LOG;
     
     public Scholastic()
 	{
@@ -34,7 +33,7 @@ public class Scholastic
     public void pre(FMLPreInitializationEvent event)
     {
     	//initialise logging
-        LOG = event.getModLog();
+        LOG = new LogHandler(event.getModLog(), LogHandler.LEVEL_WARN);
     	
     	//pre plugins
     	ScholasticPlugins.instance.pre(event);
