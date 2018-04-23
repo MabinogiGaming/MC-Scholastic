@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.event.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-public class PluginFactory implements IPlugin {
+public class TutorialPlugin implements IPlugin {
 	
 	public static boolean isRegistered = false;
 	
@@ -18,7 +18,7 @@ public class PluginFactory implements IPlugin {
 	{
 		if (true)
 		{
-			ScholasticPlugins.instance.registerPlugin(new PluginFactory());
+			ScholasticPlugins.instance.registerPlugin(new TutorialPlugin());
 			isRegistered = true;
 		}
 	}
@@ -27,6 +27,8 @@ public class PluginFactory implements IPlugin {
 	public void pre(FMLPreInitializationEvent event) 
 	{
 		LOG.info("Factory plugin pre");
+		
+		TutorialItems.register();
 	}
 
 	@Override

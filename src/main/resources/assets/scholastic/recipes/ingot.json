@@ -1,0 +1,19 @@
+{
+	"type": "forge:ore_shaped",
+	"pattern": [
+		"ig"
+	],
+	"key": {
+		"i": {
+			"type": "forge:ore_dict",
+			"ore": "ingotIron"
+		},
+		"g": {
+			"type": "forge:ore_dict",
+			"ore": "ingotGold"
+		}
+	},
+	"result": {
+		"item": "scholastic:ingot"
+	}
+}

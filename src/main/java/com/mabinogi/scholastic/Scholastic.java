@@ -2,28 +2,28 @@ package com.mabinogi.scholastic;
 
 import com.mabinogi.lib.logging.LogHandler;
 import com.mabinogi.scholastic.plugins.ScholasticPlugins;
-import com.mabinogi.scholastic.plugins.factory.PluginFactory;
+import com.mabinogi.scholastic.plugins.factory.TutorialPlugin;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Scholastic.MODID, name = Scholastic.NAME, version = Scholastic.VERSION)
+@Mod(modid = Settings.MODID, name = Settings.NAME, version = Settings.VERSION)
 public class Scholastic
 {
-    public static final String MODID = "scholastic";
-    public static final String NAME = "Scholastic";
-    public static final String VERSION = "0.0.2";
+	@Instance
+    public static Scholastic instance;
 
     public static LogHandler LOG;
     
     public Scholastic()
 	{
     	//register plugins
-    	PluginFactory.register();
+    	TutorialPlugin.register();
     	
     	//start plugins
     	ScholasticPlugins.instance.start();
