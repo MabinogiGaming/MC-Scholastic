@@ -1,4 +1,4 @@
-package com.mabinogi.scholastic.plugins.factory;
+package com.mabinogi.scholastic.plugins.tutorial;
 
 import static com.mabinogi.scholastic.Scholastic.LOG;
 
@@ -13,7 +13,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class TutorialPlugin implements IPlugin {
 	
 	public static boolean isRegistered = false;
-	
 	public static void register()
 	{
 		if (true)
@@ -27,8 +26,12 @@ public class TutorialPlugin implements IPlugin {
 	public void pre(FMLPreInitializationEvent event) 
 	{
 		LOG.info("Factory plugin pre");
+
+		//register items
+		TutorialController.registerItems();
 		
-		TutorialItems.register();
+		//register blocks
+		TutorialController.registerBlocks();
 	}
 
 	@Override

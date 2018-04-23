@@ -1,0 +1,12 @@
+{
+	"forge_marker": 1,
+	"defaults": 
+	{
+		"model": "scholastic:basic"
+	},
+	"variants": 
+	{
+		"normal": [{}],
+		"inventory": [{}]
+	}
+}

@@ -2,7 +2,7 @@ package com.mabinogi.scholastic;
 
 import com.mabinogi.lib.logging.LogHandler;
 import com.mabinogi.scholastic.plugins.ScholasticPlugins;
-import com.mabinogi.scholastic.plugins.factory.TutorialPlugin;
+import com.mabinogi.scholastic.plugins.tutorial.TutorialPlugin;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
