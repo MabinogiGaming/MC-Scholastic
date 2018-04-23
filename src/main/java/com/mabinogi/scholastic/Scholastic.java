@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.event.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Settings.MODID, name = Settings.NAME, version = Settings.VERSION)
+@Mod(modid = Settings.MODID, name = Settings.NAME, version = Settings.VERSION, dependencies = Settings.DEPENDENCIES)
 public class Scholastic
 {
 	@Instance
