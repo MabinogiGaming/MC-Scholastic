@@ -5,6 +5,10 @@ import com.mabinogi.scholastic.Settings;
 
 import net.minecraft.creativetab.CreativeTabs;
 
+/**
+ * Example of a basic item, generally used in crafting recipes
+ * @author Mabinogi
+ */
 public class ItemIngot extends ItemBase {
 
 	@Override

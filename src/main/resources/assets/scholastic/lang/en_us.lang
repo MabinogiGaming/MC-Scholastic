@@ -6,3 +6,5 @@ item.scholastic.ingot.name=Tutorial Ingot
 
 #blocks
 tile.scholastic.basic.name=Tutorial Basic
+tile.scholastic.facing.name=Tutorial Facing
+tile.scholastic.horizontal.name=Tutorial Horizontal

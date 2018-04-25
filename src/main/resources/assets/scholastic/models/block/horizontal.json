@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "scholastic:block/horizontal",
+    "down": "scholastic:block/horizontal",
+    "up": "scholastic:block/horizontal",
+    "east": "scholastic:block/horizontal",
+    "west": "scholastic:block/horizontal",
+    "north": "scholastic:block/horizontal_front",
+    "south": "scholastic:block/horizontal"
+  }
+}

@@ -1,26 +1,32 @@
 package com.mabinogi.scholastic.plugins.tutorial;
 
-import com.mabinogi.lib.block.BlockBase;
-import com.mabinogi.lib.item.ItemBase;
-import com.mabinogi.scholastic.plugins.tutorial.block.BlockBasic;
+import com.mabinogi.lib.block.BlockAbstract;
+import com.mabinogi.lib.item.ItemAbstract;
+import com.mabinogi.scholastic.plugins.tutorial.block.basic.BlockBasic;
+import com.mabinogi.scholastic.plugins.tutorial.block.facing.BlockFacing;
+import com.mabinogi.scholastic.plugins.tutorial.block.horizontal.BlockHorizontal;
 import com.mabinogi.scholastic.plugins.tutorial.item.ItemIngot;
 
 public class TutorialController {
 	
 	//items
-	public static ItemBase itemIngot;
+	public static ItemAbstract itemIngot;
 	
 	//blocks
-	public static BlockBase blockBasic;
+	public static BlockAbstract blockBasic;
+	public static BlockAbstract blockFacing;
+	public static BlockAbstract blockHorizontal;
 	
 	public static void registerItems()
 	{
-		itemIngot = ItemBase.register(new ItemIngot());
+		itemIngot = ItemAbstract.register(new ItemIngot());
 	}
 	
 	public static void registerBlocks()
 	{
-		blockBasic = BlockBase.register(new BlockBasic());
+		blockBasic = BlockAbstract.register(new BlockBasic());
+		blockFacing = BlockAbstract.register(new BlockFacing());
+		blockHorizontal = BlockAbstract.register(new BlockHorizontal());
 	}
 
 }
