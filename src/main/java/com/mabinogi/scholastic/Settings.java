@@ -9,7 +9,7 @@ public class Settings {
     
 	public static final String MODID = "scholastic";
     public static final String NAME = "Scholastic";
-    public static final String VERSION = "0.1.2";
+    public static final String VERSION = "0.2.0";
     public static final String DEPENDENCIES = "required-after:mabinogi";
 	
 	public static CreativeTabs scholasticTab = new CreativeTabs("scholasticTab")
