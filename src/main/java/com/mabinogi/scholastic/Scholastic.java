@@ -12,13 +12,15 @@ import net.minecraftforge.fml.common.event.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Settings.MODID, name = Settings.NAME, version = Settings.VERSION, dependencies = Settings.DEPENDENCIES)
+@Mod(modid = ScholasticSettings.MODID, name = ScholasticSettings.NAME, version = ScholasticSettings.VERSION, dependencies = ScholasticSettings.DEPENDENCIES)
 public class Scholastic
 {
 	@Instance
     public static Scholastic instance;
 
     public static LogHandler LOG;
+    
+    public static ScholasticConfig CONFIG;
     
     public Scholastic()
 	{
@@ -34,6 +36,9 @@ public class Scholastic
     {
     	//initialise logging
         LOG = new LogHandler(event.getModLog(), LogHandler.LEVEL_WARN);
+        
+        //initialise configuration
+        CONFIG = new ScholasticConfig(event.getModConfigurationDirectory());
     	
     	//pre plugins
     	ScholasticPlugins.instance.pre(event);
@@ -51,6 +56,9 @@ public class Scholastic
     {
     	//post plugins
     	ScholasticPlugins.instance.post(event);
+    	
+    	//save config changes
+    	CONFIG.save();
     }
     
     @EventHandler

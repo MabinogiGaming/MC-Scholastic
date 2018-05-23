@@ -1,7 +1,7 @@
 package com.mabinogi.scholastic.plugins.tutorial.item;
 
 import com.mabinogi.lib.item.ItemBase;
-import com.mabinogi.scholastic.Settings;
+import com.mabinogi.scholastic.ScholasticSettings;
 
 import net.minecraft.creativetab.CreativeTabs;
 
@@ -20,13 +20,13 @@ public class ItemIngot extends ItemBase {
 	@Override
 	public String getModId()
 	{
-		return Settings.MODID;
+		return ScholasticSettings.MODID;
 	}
 
 	@Override
 	public CreativeTabs getTab()
 	{
-		return Settings.scholasticTab;
+		return ScholasticSettings.scholasticTab;
 	}
 	
 	@Override

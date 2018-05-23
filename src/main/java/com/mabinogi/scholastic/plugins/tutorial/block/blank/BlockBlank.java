@@ -1,7 +1,7 @@
 package com.mabinogi.scholastic.plugins.tutorial.block.blank;
 
 import com.mabinogi.lib.block.BlockTile;
-import com.mabinogi.scholastic.Settings;
+import com.mabinogi.scholastic.ScholasticSettings;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -28,13 +28,13 @@ public class BlockBlank extends BlockTile {
 	@Override
 	public String getModId()
 	{
-		return Settings.MODID;
+		return ScholasticSettings.MODID;
 	}
 
 	@Override
 	public CreativeTabs getTab()
 	{
-		return Settings.scholasticTab;
+		return ScholasticSettings.scholasticTab;
 	}
 
 	@Override

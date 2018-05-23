@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.mabinogi.lib.block.BlockBase;
 import com.mabinogi.lib.block.iface.IFacing;
-import com.mabinogi.scholastic.Settings;
+import com.mabinogi.scholastic.ScholasticSettings;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -35,13 +35,13 @@ public class BlockHorizontal extends BlockBase implements IFacing {
 	@Override
 	public String getModId()
 	{
-		return Settings.MODID;
+		return ScholasticSettings.MODID;
 	}
 
 	@Override
 	public CreativeTabs getTab()
 	{
-		return Settings.scholasticTab;
+		return ScholasticSettings.scholasticTab;
 	}
 	
 	@Override
