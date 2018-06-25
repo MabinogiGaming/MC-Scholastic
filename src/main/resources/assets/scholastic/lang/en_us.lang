@@ -11,3 +11,5 @@ tile.scholastic.facing.name=Tutorial Facing
 tile.scholastic.horizontal.name=Tutorial Horizontal
 tile.scholastic.gui.name=Tutorial Gui
 tile.scholastic.blank.name=Tutorial Blank
+tile.scholastic.crate.name=Tutorial Crate
+tile.scholastic.barrel.name=Tutorial Barrel

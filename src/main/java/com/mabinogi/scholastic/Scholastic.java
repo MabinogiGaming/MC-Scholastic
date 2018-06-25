@@ -47,6 +47,9 @@ public class Scholastic
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
+    	//init network
+    	ScholasticNetwork.instance.init();
+    	
     	//init plugins
     	ScholasticPlugins.instance.init(event);
     }

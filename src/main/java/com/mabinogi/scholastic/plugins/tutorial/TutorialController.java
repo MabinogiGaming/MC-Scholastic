@@ -2,8 +2,10 @@ package com.mabinogi.scholastic.plugins.tutorial;
 
 import com.mabinogi.lib.block.BlockAbstract;
 import com.mabinogi.lib.item.ItemAbstract;
+import com.mabinogi.scholastic.plugins.tutorial.block.barrel.BlockBarrel;
 import com.mabinogi.scholastic.plugins.tutorial.block.basic.BlockBasic;
 import com.mabinogi.scholastic.plugins.tutorial.block.blank.BlockBlank;
+import com.mabinogi.scholastic.plugins.tutorial.block.crate.BlockCrate;
 import com.mabinogi.scholastic.plugins.tutorial.block.facing.BlockFacing;
 import com.mabinogi.scholastic.plugins.tutorial.block.gui.BlockGui;
 import com.mabinogi.scholastic.plugins.tutorial.block.horizontal.BlockHorizontal;
@@ -22,6 +24,8 @@ public class TutorialController {
 	public static BlockAbstract blockHorizontal;
 	public static BlockAbstract blockGui;
 	public static BlockAbstract blockBlank;
+	public static BlockAbstract blockCrate;
+	public static BlockAbstract blockBarrel;
 	
 	public static void registerItems()
 	{
@@ -36,6 +40,8 @@ public class TutorialController {
 		blockHorizontal = BlockAbstract.register(new BlockHorizontal());
 		blockGui = BlockAbstract.register(new BlockGui());
 		blockBlank = BlockAbstract.register(new BlockBlank());
+		blockCrate = BlockAbstract.register(new BlockCrate());
+		blockBarrel = BlockAbstract.register(new BlockBarrel());
 	}
 
 }

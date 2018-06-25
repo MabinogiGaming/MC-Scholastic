@@ -1,7 +1,9 @@
 package com.mabinogi.scholastic.plugins.tutorial.block.blank;
 
+import com.mabinogi.lib.network.NetworkHandler;
 import com.mabinogi.lib.tile.TileBase;
 import com.mabinogi.lib.tile.iface.IGuiTile;
+import com.mabinogi.scholastic.ScholasticNetwork;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
@@ -12,6 +14,12 @@ public class TileBlank extends TileBase implements IGuiTile {
 	public String getInventoryName()
 	{
 		return getBlockType().getLocalizedName();
+	}
+
+	@Override
+	public NetworkHandler getNetworkHandler()
+	{
+		return ScholasticNetwork.instance;
 	}
 
 	@Override
